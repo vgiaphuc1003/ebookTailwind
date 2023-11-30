@@ -1,0 +1,30 @@
+/* Add Tailwind to CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+    --color-primary: 248 248 250;
+    --color-search: 0 0 0 /3%;
+
+    /* Name Color */
+    --color-white: var(--color-primary);
+    --color-search: var(--color-search);
+}
+
+* {
+    font-family: "Manrope", sans-serif;
+}
+
+/* Animation for show/hide account profile */
+#accountDetails {
+    opacity: 0;
+}
+
+#accountDetails.show {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
